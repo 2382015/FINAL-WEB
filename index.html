@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Website</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-800">
+    <!-- Navbar -->
+    <nav class="bg-blue-500 text-white py-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <span class="text-xl font-bold"></span>
+                <span class="text-lg">My Personal Website</span>
+            </div>
+            <ul class="flex space-x-4">
+                <li><a href="index.html" class="hover:underline">Home</a></li>
+                <li><a href="about.html" class="hover:underline">About</a></li>
+                <li><a href="gallery.html" class="hover:underline">Gallery</a></li>
+                <li><a href="calculator.html" class="hover:underline">Calculator</a></li>
+                <li><a href="registration.html" class="hover:underline">Registration</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="bg-gray-900 text-white text-center py-20">
+        <div class="container mx-auto">
+            <h1 class="text-4xl font-bold mb-4">Capturing Moments, One Click at a Time</h1>
+            <p class="mb-6">Discover stunning photography from my lens. Explore a collection of landscapes, portraits, and artistic shots.</p>
+            <a href="#portfolio" class="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600">View My Work</a>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-12">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-8">Portfolio</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white shadow rounded p-4">
+                    <img src="u.jpg" alt="Portfolio Image 1" class="mb-4">
+                    <p>adventure</p>
+                </div>
+                <div class="bg-white shadow rounded p-4">
+                    <img src="sr.jpg" alt="Portfolio Image 2" class="mb-4">
+                    <p>Fun Run</p>
+                </div>
+                <div class="bg-white shadow rounded p-4">
+                    <img src="len.jpg" alt="Portfolio Image 3" class="mb-4">
+                    <p>my friends </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-blue-500 text-white text-center py-4">
+        <p>&copy; 2024 Neli Yuli Siringoringo. All rights reserved.</p>
+    </footer>
+</body>
+</html>

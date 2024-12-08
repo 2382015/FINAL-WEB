@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Website</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-800">
+    <!-- Navbar -->
+    <nav class="bg-blue-500 text-white py-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <span class="text-xl font-bold"></span>
+                <span class="text-lg">My Personal Website</span>
+            </div>
+            <ul class="flex space-x-4">
+                <li><a href="index.html" class="hover:underline">Home</a></li>
+                <li><a href="about.html" class="hover:underline">About</a></li>
+                <li><a href="gallery.html" class="hover:underline">Gallery</a></li>
+                <li><a href="calculator.html" class="hover:underline">Calculator</a></li>
+                <li><a href="registration.html" class="hover:underline">Registration</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="main container mx-auto py-12">
+        <div class="registration-form bg-blue-700 p-8 rounded-lg shadow-lg mx-auto max-w-lg">
+            <h2 class="text-3xl font-bold text-center text-white mb-6">Registration Form</h2>
+            <form action="process.php" method="POST" class="space-y-6">
+                <div class="form-group">
+                    <label for="name" class="block text-white text-lg mb-2">Full Name:</label>
+                    <input type="text" id="name" name="name" required placeholder="Enter your full name" 
+                           class="w-full p-3 rounded bg-gray-200 text-gray-800 focus:outline-none focus:ring-2 focus:ring-purple-500">
+                </div>
+    
+                <div class="form-group">
+                    <label for="phone" class="block text-white text-lg mb-2">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" required pattern="[0-9]{10,15}" placeholder="0821xxxxxxxx" 
+                           class="w-full p-3 rounded bg-gray-200 text-gray-800 focus:outline-none focus:ring-2 focus:ring-purple-500">
+                </div>
+    
+                <div class="form-group">
+                    <label for="email" class="block text-white text-lg mb-2">Email:</label>
+                    <input type="email" id="email" name="email" required placeholder="forexample10@gmail.com" 
+                           class="w-full p-3 rounded bg-gray-200 text-gray-800 focus:outline-none focus:ring-2 focus:ring-purple-500">
+                </div>
+    
+                <div class="form-group">
+                    <label for="Password" class="block text-white text-lg mb-2">Password:</label>
+                    <input type="password" id="Password" name="Password" required placeholder="********" 
+                           class="w-full p-3 rounded bg-gray-200 text-gray-800 focus:outline-none focus:ring-2 focus:ring-purple-500">
+                </div>
+    
+                <div class="form-group button-group text-center">
+                    <button type="submit" class="w-full bg-green-500 text-white py-3 rounded text-lg hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-green-400">Register</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-blue-500 text-white text-center py-4">
+        <p>&copy; 2024 Neli Yuli Siringoringo. All rights reserved.</p>
+    </footer>
+</body>
+</html>
